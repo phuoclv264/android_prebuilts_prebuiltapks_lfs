@@ -3,7 +3,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := Mail
 LOCAL_OVERRIDES_PACKAGES := Email
-LOCAL_CERTIFICATE := platform
+LOCAL_SDK_VERSION := current
 
 LOCAL_SRC_FILES := k9mail-release-unsigned.apk
 LOCAL_MODULE_CLASS := APPS
