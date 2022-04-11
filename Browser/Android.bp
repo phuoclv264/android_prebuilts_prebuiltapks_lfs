@@ -1,0 +1,21 @@
+android_app_import {
+    name: "Browser",
+    certificate: "platform",
+
+    overrides: ["Jelly"],
+
+    arch: {
+        arm: {
+            apk: "ChromePublic_arm.apk",
+        },
+        arm64: {
+            apk: "ChromePublic_arm64.apk",
+        },
+        x86: {
+            apk: "ChromePublic_x86.apk",
+        },
+        x86_64: {
+            apk: "ChromePublic_x86_64.apk",
+        },
+    },
+}

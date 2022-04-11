@@ -1,0 +1,26 @@
+android_app_import {
+    name: "BrowserWebView",
+    certificate: "platform",
+
+    overrides: ["webview"],
+
+    required: [
+        "libwebviewchromium_loader",
+        "libwebviewchromium_plat_support",
+    ],
+
+    arch: {
+        arm: {
+            apk: "SystemWebView_arm.apk",
+        },
+        arm64: {
+            apk: "SystemWebView_arm64.apk",
+        },
+        x86: {
+            apk: "SystemWebView_x86.apk",
+        },
+        x86_64: {
+            apk: "SystemWebView_x86_64.apk",
+        }
+    }
+}
