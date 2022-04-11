@@ -4,6 +4,8 @@ android_app_import {
 
     overrides: ["webview"],
 
+    product_specific: true,
+
     required: [
         "libwebviewchromium_loader",
         "libwebviewchromium_plat_support",

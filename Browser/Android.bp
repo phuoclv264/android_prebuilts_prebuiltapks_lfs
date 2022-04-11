@@ -4,6 +4,8 @@ android_app_import {
 
     overrides: ["Jelly"],
 
+    product_specific: true,
+
     arch: {
         arm: {
             apk: "ChromePublic_arm.apk",
