@@ -9,11 +9,7 @@ $(if $(shell [ $(PLATFORM_SDK_VERSION) -ge 29 ] && echo "ok"), \
     $(eval BUILD_GREATER_THAN_PIE := true), \
     $(eval BUILD_GREATER_THAN_PIE := false))
 
-ifeq ($(PLATFORM_SDK_VERSION), 25)
-  LOCAL_SRC_FILES := app-apiNougat-release-unsigned.apk
-else ifeq ($(PLATFORM_SDK_VERSION), 27)
-  LOCAL_SRC_FILES := app-apiOreo-release-unsigned.apk
-else ifeq ($(PLATFORM_SDK_VERSION), 28)
+ifeq ($(PLATFORM_SDK_VERSION), 28)
   LOCAL_SRC_FILES := app-apiOreo-release-unsigned.apk
 else ifeq ($(PLATFORM_SDK_VERSION), 29)
   LOCAL_SRC_FILES := app-apiQ-release-unsigned.apk
