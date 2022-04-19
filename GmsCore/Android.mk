@@ -19,13 +19,7 @@ include $(BUILD_PREBUILT)
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := GmsCore
-
-ifeq ($(PLATFORM_SDK_VERSION), 25)
-  LOCAL_SRC_FILES := play-services-core-withMapbox-withoutNearby-nougat-release-unsigned.apk
-else
-  LOCAL_SRC_FILES := play-services-core-withMapbox-withoutNearby-release-unsigned.apk
-endif
-
+LOCAL_SRC_FILES := play-services-core-withMapbox-withoutNearby-release-unsigned.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
