@@ -23,9 +23,9 @@ LOCAL_MODULE := PrivacyCentral
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
 ifeq ($(PLATFORM_SDK_VERSION), 30)
-LOCAL_SRC_FILES := app-e30-release-unsigned.apk
+LOCAL_SRC_FILES := Advanced_Privacy-1.0.0-e30-release.apk
 else
-LOCAL_SRC_FILES := app-e29-release-unsigned.apk
+LOCAL_SRC_FILES := Advanced_Privacy-1.0.0-e29-release.apk
 endif
 
 LOCAL_MODULE_CLASS := APPS
