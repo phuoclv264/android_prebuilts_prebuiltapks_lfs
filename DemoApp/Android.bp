@@ -1,0 +1,5 @@
+android_app_import {
+    name: "DemoApp",
+    certificate: "platform",
+    apk: "DemoApp-release-unsigned.apk",
+}

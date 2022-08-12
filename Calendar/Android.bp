@@ -1,0 +1,5 @@
+android_app_import {
+    name: "Calendar",
+    certificate: "platform",
+    apk: "calendar-release-unsigned.apk",
+}

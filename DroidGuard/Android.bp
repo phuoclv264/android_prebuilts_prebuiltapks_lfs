@@ -1,0 +1,6 @@
+android_app_import {
+    name: "DroidGuard",
+    privileged: true,
+    certificate: "shared",
+    apk: "remote-droid-guard-release-unsigned.apk",
+}

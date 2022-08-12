@@ -1,0 +1,9 @@
+android_app_import {
+    name: "Camera",
+    certificate: "platform",
+    overrides: [
+        "Camera2",
+        "Snap",
+    ],
+    apk: "app-release-unsigned.apk",
+}

@@ -1,0 +1,5 @@
+android_app_import {
+    name: "BlissIconPack",
+    certificate: "platform",
+    apk: "app-release-unsigned.apk",
+}

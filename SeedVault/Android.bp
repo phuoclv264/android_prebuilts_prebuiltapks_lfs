@@ -1,0 +1,13 @@
+prebuilt_etc {
+    name: "privapp-permissions-com.stevesoltys.seedvault.xml",
+    src: "privapp-permissions-com.stevesoltys.seedvault.xml",
+    sub_dir: "permissions",
+}
+android_app_import {
+    name: "SeedVault",
+    certificate: "platform",
+    privileged: true,
+    required: ["privapp-permissions-com.stevesoltys.seedvault.xml"],
+    apk: "SeedVault.apk",
+
+}

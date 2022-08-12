@@ -1,0 +1,5 @@
+android_app_import {
+    name: "eSpeakTTS",
+    certificate: "platform",
+    apk: "espeak-release-unsigned.apk",
+}

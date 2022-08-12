@@ -1,0 +1,6 @@
+android_app_import {
+    name: "Apps",
+    certificate: "platform",
+    apk: "AppLounge-2.3.4-release.apk",
+    optional_uses_libs: ["androidx.window.extensions", "androidx.window.sidecar"],
+}

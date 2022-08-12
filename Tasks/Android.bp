@@ -1,0 +1,5 @@
+android_app_import {
+    name: "Tasks",
+    certificate: "platform",
+    apk: "opentasks-release-unsigned.apk",
+}

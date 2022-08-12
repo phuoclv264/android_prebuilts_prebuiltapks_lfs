@@ -1,0 +1,18 @@
+prebuilt_etc {
+    name: "privapp-permissions-com.google.android.gms.xml",
+    src: "privapp-permissions-com.google.android.gms.xml",
+    sub_dir: "permissions",
+}
+prebuilt_etc {
+    name: "microg.xml",
+    src: "GmsCore/microg.xml",
+}
+android_app_import {
+    name: "GmsCore",
+    privileged: true,
+    certificate: "platform",
+    overrides: ["com.qualcomm.location"],
+    required: ["privapp-permissions-com.google.android.gms.xml", "microg.xml"],
+    apk: "play-services-core-withMapbox-withoutNearby-release-unsigned.apk",
+    uses_libs: ["com.android.location.provider"],
+}

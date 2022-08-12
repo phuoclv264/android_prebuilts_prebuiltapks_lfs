@@ -1,0 +1,5 @@
+android_app_import {
+    name: "LibreOfficeViewer",
+    apk: "org.documentfoundation.libreoffice_15.apk",
+    presigned: true,
+}

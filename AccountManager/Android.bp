@@ -1,0 +1,5 @@
+android_app_import {
+    name: "AccountManager",
+    certificate: "platform",
+    apk: "app-standard-release-unsigned.apk",
+}

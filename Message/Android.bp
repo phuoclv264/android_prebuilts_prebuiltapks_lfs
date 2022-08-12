@@ -1,0 +1,6 @@
+android_app_import {
+    name: "Message",
+    certificate: "platform",
+    overrides: ["messaging"],
+    apk: "presentation-noAnalytics-universal-release-unsigned.apk",
+}

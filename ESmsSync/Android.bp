@@ -1,0 +1,5 @@
+android_app_import {
+    name: "ESmsSync",
+    certificate: "platform",
+    apk: "ncsms-android-release-unsigned.apk",
+}

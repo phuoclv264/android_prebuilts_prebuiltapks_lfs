@@ -1,0 +1,5 @@
+android_app_import {
+    name: "Light",
+    certificate: "platform",
+    apk: "light-release-unsigned.apk",
+}

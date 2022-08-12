@@ -1,0 +1,5 @@
+android_app_import {
+    name: "eDrive",
+    certificate: "platform",
+    apk: "eDrive-1.1.0-release-unsigned.apk",
+}

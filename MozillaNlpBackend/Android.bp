@@ -1,0 +1,5 @@
+android_app_import {
+    name: "MozillaNlpBackend",
+    apk: "IchnaeaNlpBackend-1.5.apk",
+    presigned: true,
+}

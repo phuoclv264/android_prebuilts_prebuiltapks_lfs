@@ -1,0 +1,5 @@
+android_app_import {
+    name: "NominatimNlpBackend",
+    apk: "org.microg.nlp.backend.nominatim_20042.apk",
+    presigned: true,
+}
