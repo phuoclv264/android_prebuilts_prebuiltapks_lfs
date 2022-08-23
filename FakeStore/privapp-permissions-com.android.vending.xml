@@ -2,6 +2,5 @@
 <permissions>
     <privapp-permissions package="com.android.vending">
         <permission name="android.permission.FAKE_PACKAGE_SIGNATURE"/>
-        <permission name="android.permission.INTERNET"/>
     </privapp-permissions>
 </permissions>
