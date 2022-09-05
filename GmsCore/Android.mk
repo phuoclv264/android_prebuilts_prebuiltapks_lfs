@@ -27,4 +27,7 @@ LOCAL_CERTIFICATE := platform
 LOCAL_OVERRIDES_PACKAGES := com.qualcomm.location
 LOCAL_REQUIRED_MODULES := privapp-permissions-com.google.android.gms.xml
 LOCAL_REQUIRED_MODULES += microg.xml
+ifneq ($(call math_gt_or_eq, $(PLATFORM_SDK_VERSION), 31),)
+LOCAL_USES_LIBRARIES := com.android.location.provider
+endif
 include $(BUILD_PREBUILT)
