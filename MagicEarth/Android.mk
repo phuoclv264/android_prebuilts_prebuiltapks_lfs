@@ -8,6 +8,9 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_REQUIRED_MODULES := libMagicEarthNative.so
+ifneq ($(call math_gt_or_eq, $(PLATFORM_SDK_VERSION), 31),)
+LOCAL_OPTIONAL_USES_LIBRARIES := com.sec.android.app.multiwindow
+endif
 include $(BUILD_PREBUILT)
 
 ifeq ($(TARGET_ARCH), $(filter $(TARGET_ARCH), arm64))
