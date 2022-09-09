@@ -13,8 +13,10 @@ ifeq ($(PLATFORM_SDK_VERSION), 28)
   LOCAL_SRC_FILES := BlissLauncher-1.4.2-apiOreo-release.apk
 else ifeq ($(PLATFORM_SDK_VERSION), 29)
   LOCAL_SRC_FILES := BlissLauncher-1.4.2-apiQ-release.apk
-else
+else ifeq ($(PLATFORM_SDK_VERSION), 30)
   LOCAL_SRC_FILES := BlissLauncher-1.4.2-apiR-release.apk
+else
+  LOCAL_SRC_FILES := BlissLauncher-1.4.2-apiS-release.apk
 endif
 
 LOCAL_MODULE_CLASS := APPS

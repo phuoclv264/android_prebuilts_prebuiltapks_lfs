@@ -8,8 +8,10 @@ ifeq ($(PLATFORM_SDK_VERSION), 28)
   LOCAL_SRC_FILES := OpenWeatherMapWeatherProvider-oreo.apk
 else ifeq ($(PLATFORM_SDK_VERSION), 29)
   LOCAL_SRC_FILES := OpenWeatherMapWeatherProvider-q.apk
-else
+else ifeq ($(PLATFORM_SDK_VERSION), 30)
   LOCAL_SRC_FILES := OpenWeatherMapWeatherProvider-r.apk
+else
+  LOCAL_SRC_FILES := OpenWeatherMapWeatherProvider-s.apk
 endif
 
 LOCAL_MODULE_CLASS := APPS
