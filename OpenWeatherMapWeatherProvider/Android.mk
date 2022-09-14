@@ -2,6 +2,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := OpenWeatherMapWeatherProvider
+LOCAL_PRODUCT_MODULE := true
 LOCAL_CERTIFICATE := platform
 
 ifeq ($(PLATFORM_SDK_VERSION), 28)

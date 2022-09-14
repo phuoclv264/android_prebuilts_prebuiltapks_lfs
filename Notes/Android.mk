@@ -2,6 +2,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := Notes
+LOCAL_PRODUCT_MODULE := true
 LOCAL_CERTIFICATE := platform
 LOCAL_SRC_FILES := app-release-unsigned.apk
 LOCAL_MODULE_CLASS := APPS

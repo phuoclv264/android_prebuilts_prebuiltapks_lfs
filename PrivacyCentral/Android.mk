@@ -13,7 +13,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := privapp-permissions-foundation.e.privacycentralapp.xml
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
-LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/permissions
+LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT_ETC)/permissions
 LOCAL_SRC_FILES := $(LOCAL_MODULE)
 include $(BUILD_PREBUILT)
 
@@ -22,6 +22,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := PrivacyCentral
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
+LOCAL_PRODUCT_MODULE := true
 ifeq ($(PLATFORM_SDK_VERSION), 30)
 LOCAL_SRC_FILES := Advanced_Privacy-1.2.0-e30-release.apk
 else
@@ -47,6 +48,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libpdnsd
+LOCAL_PRODUCT_MODULE := true
 LOCAL_SRC_FILES := $(LIB_PATH)/libpdnsd.so
 LOCAL_MODULE_PATH := $(TARGET_OUT_EXECUTABLES)
 LOCAL_MODULE_TAGS := optional
@@ -55,6 +57,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := libtor
+LOCAL_PRODUCT_MODULE := true
 LOCAL_SRC_FILES := $(LIB_PATH)/libtor.so
 LOCAL_MODULE_PATH := $(TARGET_OUT_EXECUTABLES)
 LOCAL_CHECK_ELF_FILES := false

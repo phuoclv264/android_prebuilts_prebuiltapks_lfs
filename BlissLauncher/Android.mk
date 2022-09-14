@@ -2,6 +2,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := BlissLauncher
+LOCAL_PRODUCT_MODULE := true
 LOCAL_CERTIFICATE := platform
 
 # the ok part is necessary: https://stackoverflow.com/questions/3442304/performing-greater-than-less-than-calculations-in-a-makefile/44288938#44288938
@@ -30,8 +31,7 @@ ifeq ($(BUILD_GREATER_THAN_PIE),true)
   LOCAL_MODULE := privapp_whitelist_foundation.e.blisslauncher.xml
   LOCAL_MODULE_CLASS := ETC
   LOCAL_MODULE_TAGS := optional
-  LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/permissions
-  LOCAL_PRODUCT_MODULE := true
+  LOCAL_MODULE_PATH := $(TARGET_OUT_PRODUCT_ETC)/permissions
   LOCAL_SRC_FILES := $(LOCAL_MODULE)
 endif
 
