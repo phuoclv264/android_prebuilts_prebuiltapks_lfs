@@ -35,5 +35,5 @@ LOCAL_PREBUILT_JNI_LIBS_x86_64 := $(foreach lib,$(private_jni_libs), @$(LIB_PATH
 
 private_jni_copy_libs := libgojni.so libmapbox-gl.so libtor.so
 LOCAL_POST_INSTALL_CMD := mkdir -p $(TARGET_OUT)/priv-app/$(LOCAL_MODULE)/lib/$(TARGET_ARCH)
-LOCAL_POST_INSTALL_CMD += ; $(foreach lib,$(private_jni_copy_libs), cp $(LOCAL_PATH)/$(LIB_PATH)/$(lib) $(TARGET_OUT)/priv-app/$(LOCAL_MODULE)/lib/$(TARGET_ARCH)/$(LIB);)
+LOCAL_POST_INSTALL_CMD += $(foreach lib,$(private_jni_copy_libs), ; cp $(LOCAL_PATH)/$(LIB_PATH)/$(lib) $(TARGET_OUT)/priv-app/$(LOCAL_MODULE)/lib/$(TARGET_ARCH)/$(lib))
 include $(BUILD_PREBUILT)
