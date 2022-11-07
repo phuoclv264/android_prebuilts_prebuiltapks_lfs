@@ -10,13 +10,13 @@ $(if $(shell [ $(PLATFORM_SDK_VERSION) -ge 29 ] && echo "ok"), \
     $(eval BUILD_GREATER_THAN_PIE := false))
 
 ifeq ($(PLATFORM_SDK_VERSION), 28)
-  LOCAL_SRC_FILES := BlissLauncher-1.5.0-apiOreo-release.apk
+  LOCAL_SRC_FILES := BlissLauncher-1.6.0-apiOreo-release.apk
 else ifeq ($(PLATFORM_SDK_VERSION), 29)
-  LOCAL_SRC_FILES := BlissLauncher-1.5.0-apiQ-release.apk
+  LOCAL_SRC_FILES := BlissLauncher-1.6.0-apiQ-release.apk
 else ifeq ($(PLATFORM_SDK_VERSION), 30)
-  LOCAL_SRC_FILES := BlissLauncher-1.5.0-apiR-release.apk
+  LOCAL_SRC_FILES := BlissLauncher-1.6.0-apiR-release.apk
 else
-  LOCAL_SRC_FILES := BlissLauncher-1.5.0-apiS-release.apk
+  LOCAL_SRC_FILES := BlissLauncher-1.6.0-apiS-release.apk
 endif
 
 LOCAL_MODULE_CLASS := APPS
@@ -36,3 +36,4 @@ ifeq ($(BUILD_GREATER_THAN_PIE),true)
 endif
 
 include $(BUILD_PREBUILT)
+
