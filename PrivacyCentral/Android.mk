@@ -22,18 +22,18 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := PrivacyCentral
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
-LOCAL_SRC_FILES := Advanced_Privacy-1.4.0-e-release.apk
+LOCAL_SRC_FILES := Advanced_Privacy-1.8.0-e-release.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_REQUIRED_MODULES := privapp-permissions-foundation.e.privacycentralapp.xml
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 
-private_jni_libs := libgojni.so libmapbox-gl.so libtor.so
+private_jni_libs := libgojni.so libmapbox-gl.so libtor.so libsentry.so libsentry-android.so
 LOCAL_PREBUILT_JNI_LIBS_arm := $(foreach lib,$(private_jni_libs), @$(LIB_PATH)/$(lib))
 LOCAL_PREBUILT_JNI_LIBS_arm64 := $(foreach lib,$(private_jni_libs), @$(LIB_PATH)/$(lib))
 LOCAL_PREBUILT_JNI_LIBS_x86 := $(foreach lib,$(private_jni_libs), @$(LIB_PATH)/$(lib))
 LOCAL_PREBUILT_JNI_LIBS_x86_64 := $(foreach lib,$(private_jni_libs), @$(LIB_PATH)/$(lib))
 
-private_jni_copy_libs := libgojni.so libmapbox-gl.so libtor.so
+private_jni_copy_libs := libgojni.so libmapbox-gl.so libtor.so libsentry.so libsentry-android.so
 LOCAL_POST_INSTALL_CMD := mkdir -p $(TARGET_OUT)/priv-app/$(LOCAL_MODULE)/lib/$(TARGET_ARCH)
 LOCAL_POST_INSTALL_CMD += $(foreach lib,$(private_jni_copy_libs), ; cp $(LOCAL_PATH)/$(LIB_PATH)/$(lib) $(TARGET_OUT)/priv-app/$(LOCAL_MODULE)/lib/$(TARGET_ARCH)/$(lib))
 include $(BUILD_PREBUILT)
