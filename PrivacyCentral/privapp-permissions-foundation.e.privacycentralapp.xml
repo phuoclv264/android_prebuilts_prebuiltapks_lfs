@@ -6,5 +6,6 @@
         <permission name="android.permission.GET_APP_OPS_STATS" />
         <permission name="android.permission.WRITE_SECURE_SETTINGS" />
         <permission name="android.permission.CONTROL_VPN" />
+        <permission name="android.permission.MANAGE_USERS" />
     </privapp-permissions>
 </permissions>
