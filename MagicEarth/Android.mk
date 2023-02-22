@@ -6,7 +6,11 @@ LOCAL_MODULE := MagicEarth
 LOCAL_SRC_FILES := MagicEarth-$(TARGET_ARCH).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+ifneq ($(call math_gt_or_eq, $(PLATFORM_SDK_VERSION), 33),)
+LOCAL_CERTIFICATE := platform
+else
 LOCAL_CERTIFICATE := PRESIGNED
+endif
 LOCAL_REQUIRED_MODULES := libMagicEarthNative.so
 ifneq ($(call math_gt_or_eq, $(PLATFORM_SDK_VERSION), 31),)
 LOCAL_OPTIONAL_USES_LIBRARIES := com.sec.android.app.multiwindow
