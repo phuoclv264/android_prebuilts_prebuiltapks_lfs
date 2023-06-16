@@ -1,0 +1,22 @@
+android_app_import {
+        name: "Talkback",
+        default_dev_cert: true,
+        enforce_uses_libs: false,
+        dex_preopt: {
+                enabled: false,
+        },
+        arch: {
+            arm: {
+                apk: "talkback-foss-phone-armeabi-v7a-release-unsigned.apk",
+            },
+            arm64: {
+                apk: "talkback-foss-phone-arm64-v8a-release-unsigned.apk",
+            },
+            x86: {
+                apk: "talkback-foss-phone-x86-release-unsigned.apk",
+            },
+            x86_64: {
+                apk: "talkback-foss-phone-x86_64-release-unsigned.apk",
+            },
+        },
+}
