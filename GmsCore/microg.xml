@@ -1,15 +1,12 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <map>
-    <set name="location_backends">
-        <string>org.microg.nlp.backend.ichnaea/org.microg.nlp.backend.ichnaea.BackendService/9bd06727e62796c0130eb6dab39b73157451582cbd138e86c468acc395d14165</string>
-    </set>
-    <set name="geocoder_backends">
-        <string>org.microg.nlp.backend.nominatim/org.microg.nlp.backend.nominatim.BackendService/44226aa6b4ff69627283a28348976371558f039561f776208da08c294286d5d2</string>
-    </set>
     <boolean name="checkin_enable_service" value="true" />
     <boolean name="gcm_enable_mcs_service" value="true" />
     <boolean name="network_google_use_tor" value="false" />
     <boolean name="network_google_enabled" value="true" />
     <boolean name="safetynet_enabled" value="true" />
     <boolean name="droidguard_enabled" value="true" />
+    <boolean name="location_wifi_mls" value="true" />
+    <boolean name="location_cell_mls" value="true" />
+    <boolean name="location_geocoder_nominatim" value="true" />
 </map>
