@@ -6,12 +6,8 @@ LOCAL_MODULE := MagicEarth
 LOCAL_SRC_FILES := MagicEarth-$(TARGET_ARCH).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
-ifneq ($(call math_gt_or_eq, $(PLATFORM_SDK_VERSION), 33),)
-LOCAL_CERTIFICATE := platform
-else
 LOCAL_CERTIFICATE := PRESIGNED
-endif
-LOCAL_REQUIRED_MODULES := libMagicEarthNative.so
+LOCAL_REQUIRED_MODULES := libMagicEarthSphereNative.so
 ifneq ($(call math_gt_or_eq, $(PLATFORM_SDK_VERSION), 31),)
 LOCAL_OPTIONAL_USES_LIBRARIES := com.sec.android.app.multiwindow
 endif
@@ -28,9 +24,9 @@ else ifeq ($(TARGET_ARCH), $(filter $(TARGET_ARCH), x86))
 endif
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libMagicEarthNative.so
+LOCAL_MODULE := libMagicEarthSphereNative.so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_CHECK_ELF_FILES := false
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
-LOCAL_SRC_FILES := $(LIB_PATH)/libMagicEarthNative.so
+LOCAL_SRC_FILES := $(LIB_PATH)/libMagicEarthSphereNative.so
 include $(BUILD_PREBUILT)
