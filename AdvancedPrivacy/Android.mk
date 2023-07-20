@@ -26,6 +26,10 @@ LOCAL_SRC_FILES := Advanced_Privacy-1.14.0-e-release.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_REQUIRED_MODULES := privapp-permissions-foundation.e.advancedprivacy.xml
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
+ifneq ($(call math_gt_or_eq, $(PLATFORM_SDK_VERSION), 31),)
+LOCAL_OPTIONAL_USES_LIBRARIES := androidx.window.extensions \
+                                 androidx.window.sidecar
+endif
 
 private_jni_libs := libgojni.so libmapbox-gl.so libtor.so libsentry.so libsentry-android.so
 LOCAL_PREBUILT_JNI_LIBS_arm := $(foreach lib,$(private_jni_libs), @$(LIB_PATH)/$(lib))
