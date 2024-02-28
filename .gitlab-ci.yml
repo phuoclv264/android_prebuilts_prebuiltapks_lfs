@@ -1,0 +1,14 @@
+stages:
+  - auto-merge-main
+
+include:
+  - project: 'e/templates'
+    ref: master
+    file: '/gitlab-ci/.gitlab-ci-auto-merge-main.yml'
+
+main:
+  extends: .auto-merge-main
+  variables:
+    BRANCH_NAME_REGEX: /^v[0-9](\.[0-9]*){1,2}$/
+    TARGET_BRANCH: main
+
