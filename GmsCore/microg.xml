@@ -12,4 +12,5 @@
     <boolean name="vending_licensing" value="true" />
     <boolean name="location_wifi_learning" value="true" />
     <boolean name="location_cell_learning" value="true" />
+    <boolean name="location_from_murena" value="true" />
 </map>
