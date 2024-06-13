@@ -3,7 +3,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE := Apps
 LOCAL_CERTIFICATE := platform
-LOCAL_SRC_FILES := AppLounge-2.7.5-release.apk
+LOCAL_SRC_FILES := AppLounge-2.7.6-release.apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_SUFFIX := $(COMMON_ANDROID_PACKAGE_SUFFIX)
 ifneq ($(call math_gt_or_eq, $(PLATFORM_SDK_VERSION), 31),)
