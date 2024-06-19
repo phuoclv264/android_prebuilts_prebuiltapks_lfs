@@ -7,8 +7,3 @@ service set-device-owner /system/bin/set-device-owner.sh
 
 on property:persist.sys.mdm_active=1
   start set-device-owner
-
-# We can remove without shell command from app itself
-# on property:persist.sys.mdm_active=0
-#  exec - system system -- /bin/rm /data/system/device_owner_2.xml
-#  exec - system system -- /bin/rm /data/system/device_policies.xml
