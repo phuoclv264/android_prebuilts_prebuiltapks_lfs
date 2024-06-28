@@ -1,0 +1,9 @@
+service set-device-owner /system/bin/set-device-owner.sh
+    class core
+    user shell
+    oneshot
+    seclabel u:r:shell:s0
+    disabled
+
+on property:persist.sys.mdm_active=1
+  start set-device-owner
